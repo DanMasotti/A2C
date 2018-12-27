@@ -1,0 +1,5 @@
+1. Document any known bugs.
+None
+
+2. Explain what changes you would have to make to turn your Actor Critic algorithm into a REINFORCE algorithm.
+I would remove my critic NN and change the loss function.  For the loss function, I would only calculate the actor loss and replace "advantage" with rewards.  The optimizer would just optimize the loss for the actor NN.
